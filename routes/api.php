@@ -18,5 +18,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('student',function (){
-    return 'hello';
+    return 'hello this is a cate';
 });
