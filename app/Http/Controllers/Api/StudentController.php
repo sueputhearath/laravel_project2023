@@ -10,13 +10,13 @@ class StudentController extends Controller
     {
         $students = Student::all();
 
-        if ($students->count() > 0) {
-            return response()->json([
+        if ($students -> count() > 0) {
+            return response() -> json([
                 "status" => 200,
                 "students" => $students
             ], 200);
         } else {
-            return response()->json([
+            return response() -> json([
                 "status" => 404,
                 "message" => "Record not found"
             ], 404);
